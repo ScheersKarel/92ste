@@ -39,7 +39,7 @@ function buildStyles() {
         baseDir: 'public/' 
       }
     });
-    gulp.watch('./src/scss/*.scss', buildStyles);
+    gulp.watch('./src/scss/**/*.scss', buildStyles);
     gulp.watch('./src/images/*', images);
     gulp.watch('./src/js/*', compress)
     gulp.watch('./public/*.html').on('change', browserSync.reload);

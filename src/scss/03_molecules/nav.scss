@@ -1,0 +1,54 @@
+nav{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+nav .header{
+    display: flex;   
+    justify-content: space-between; /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
+    align-items: center;
+}
+
+nav .hamburger-icon{
+    margin-top: 20px;
+}
+
+nav img{
+    max-width: 100%;
+}
+
+
+#navbar {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, max-height 1s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    text-align: center;
+    font-size: 120%;
+}
+
+#navbar.active {
+    transform: translateY(0);
+    opacity: 1;
+    max-height: 500px; /* of de hoogte die je wilt hebben */
+    pointer-events: auto;
+}
+
+#navbar:not(.active) {
+    transition: transform 5s ease-in-out, opacity 5s ease-in-out, max-height 1s ease-in-out; /* Aangepaste overgangsduratie voor deactiveren */
+    max-height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#navbar a li{
+   padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 3rem;
+}
+#navbar a li:hover{
+   background-color: $buttonHoverColor;
+   color: $textHoverColor;
+}

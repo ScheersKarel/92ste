@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".hamburger-icon");const t=document.getElementById("navbar");e.addEventListener("click",function(){t.classList.toggle("active")})});
