@@ -7,8 +7,8 @@ include('./components/nav.html');
         <img src="./resources/images/imgHome.png" alt="" class="content__img">
 
         
-
-        <div class="content__container">
+    <div class="content__container">
+        <div class="homeContainer">
 
             
             <div class="newscards">
@@ -82,7 +82,7 @@ include('./components/nav.html');
         </div>
 
 
-
+    </div>
 <?php 
 include('./components/footer.html');
 ?>

@@ -6,9 +6,14 @@
 
 @import "03_molecules/nav.scss";
 @import "03_molecules/newscards.scss";
-@import "03_molecules/info.scss";
+@import "03_molecules/homeInfo.scss";
+@import "03_molecules/takinfo.scss";
+@import "03_molecules/leiding.scss";
+@import "03_molecules/takNieuws.scss";
 
 @import "04_organisms/footer.scss";
+
+@import "05_layouts/homeContainer.scss";
 
 @import "06_pages/content.scss";
 @import "06_pages/body.scss";

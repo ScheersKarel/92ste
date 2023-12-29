@@ -1,10 +1,13 @@
 .content{
     width: 100%;
-    margin-top: 30px;
+    
     &__img
     {
+       margin-top: -30px;
+        max-height: 500px;
         width: 100%;
-        margin-top: -20px;
+        height: auto;
+        object-fit: cover;
     }
     &__title{
         
@@ -15,18 +18,20 @@
         margin: auto;
     }
    
+}
 
-    @media screen and (min-width: 1024px) {
-        .content{
-           
-            &__container{
-               width: 80%;
-                display: grid;
-                grid-template-columns: 70% 30% ;
-                margin-top: 30px;
-        
-            }
+@media screen and (min-width: 1024px) {
+    .content{
+        &__img{
+        margin-top: 20px;
+        }
+
+        &__container{
+            width: 80%;
+            margin-top: 30px;
+    
         }
     }
 }
+
 

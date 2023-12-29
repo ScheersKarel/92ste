@@ -1,0 +1,26 @@
+.takNieuws{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .takNieuws{
+        width: 80%;
+        margin: auto;
+        display: block;
+        margin-bottom: 100px;
+        &__title{
+            margin-top: 50px;
+            font-size: 180%;
+        }
+
+        &__container{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__line{
+            border-left: 2px solid $bgFooter;
+            margin-right: 20px;
+            margin-left: 10px;
+        }
+    }
+}

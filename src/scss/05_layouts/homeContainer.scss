@@ -1,0 +1,10 @@
+.homeContainer{
+
+}
+
+@media screen and (min-width: 1024px) {
+    .homeContainer{
+        display: grid;
+        grid-template-columns: 70% 30% ;
+    }
+}

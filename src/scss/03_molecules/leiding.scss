@@ -1,0 +1,36 @@
+.leiding{
+    background: $backgroundLeiding;
+    display: none;
+    margin-top: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .leiding{
+        padding-top: 50px;
+        display: block;
+        &__title{
+            width: 80%;
+            margin: auto;
+            font-size: 180%;
+        }
+        &__container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+        }
+        &__card{
+            margin-right: 20px;
+            margin-top: 50px;
+            &__name{
+                text-align: center;
+            }
+            &__totem{
+                text-align: center;
+            }
+
+        }
+    }
+}
