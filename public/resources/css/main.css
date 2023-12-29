@@ -106,6 +106,7 @@ nav img {
   #navbar #CTA {
     border: 1px solid #053F41;
     border-radius: 5px;
+    padding: 3px 10px 3px 10px;
   }
 }
 .newscards {
