@@ -11,7 +11,7 @@ nav .header{
 }
 
 nav .hamburger-icon{
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 nav img{
@@ -27,7 +27,7 @@ nav img{
     overflow: hidden;
     pointer-events: none;
     text-align: center;
-    font-size: 120%;
+    font-size: 120%;   
 }
 
 #navbar.active {
@@ -43,13 +43,10 @@ nav img{
     opacity: 0;
     pointer-events: none;
 }
-
-#navbar a li{
-   padding-bottom: 5px;
-    padding-top: 5px;
-    border-radius: 3rem;
+#navbar a{
+    color:$textColor ;
 }
-#navbar a li:hover{
+#navbar a:hover{
    background-color: $buttonHoverColor;
    color: $textHoverColor;
 }
