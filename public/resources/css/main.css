@@ -37,6 +37,7 @@ nav img {
   pointer-events: none;
   text-align: center;
   font-size: 120%;
+  margin-top: 20px;
 }
 
 #navbar.active {
@@ -54,17 +55,51 @@ nav img {
 }
 
 #navbar a {
+  display: block;
+  margin-bottom: 15px;
   color: #053F41;
+  border-bottom: 1px solid transparent;
+  padding: 3px 6px 3px 6px;
 }
 
 #navbar a:hover {
-  background-color: #053F41;
-  color: white;
+  border-bottom: 1px solid #053F41;
+  transition: 0.3s ease-in-out;
 }
 
+@media screen and (min-width: 1024px) {
+  nav {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
+    align-items: center;
+  }
+  nav .hamburger-icon {
+    display: none;
+  }
+  nav img {
+    width: 70%;
+  }
+  #navbar {
+    display: flex;
+    margin-top: 0;
+    flex-direction: row;
+  }
+  #navbar a {
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+  #navbar #CTA {
+    border: 1px solid #053F41;
+    border-radius: 5px;
+  }
+}
 .newscards {
   width: 90%;
-  margin: auto;
 }
 .newscards__card {
   margin-top: 20px;
@@ -107,6 +142,28 @@ nav img {
   margin-left: 2%;
 }
 
+.info {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .info {
+    display: block;
+  }
+  .info__title {
+    font-size: 170%;
+    margin-bottom: 30px;
+    margin-left: 20%;
+  }
+  .info__text {
+    border-left: 2px solid #053F41;
+    padding-left: 20%;
+    line-height: 1.5;
+  }
+  .info a {
+    color: #F39A18;
+  }
+}
 .footer {
   background-color: #053F41;
   margin-top: 30px;
@@ -152,11 +209,14 @@ nav img {
   margin-top: -20px;
 }
 .content__title {
+  font-size: 170%;
+}
+.content__container {
   width: 90%;
   margin: auto;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  font-size: 170%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-top: 30px;
 }
 
 body {

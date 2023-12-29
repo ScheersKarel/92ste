@@ -1,0 +1,27 @@
+.info{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .info{
+       
+        display: block;
+        
+
+        &__title{
+            font-size: $fontsizeH1Mobile;
+            margin-bottom: 30px;
+            margin-left: 20%;
+        }
+
+        &__text{
+            border-left: 2px solid $buttonBorderColor;
+            padding-left: 20%;
+            line-height: 1.5;
+        }
+       
+    }
+    .info a {
+        color: #F39A18;
+    }
+}

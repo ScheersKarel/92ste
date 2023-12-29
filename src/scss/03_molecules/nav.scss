@@ -28,6 +28,7 @@ nav img{
     pointer-events: none;
     text-align: center;
     font-size: 120%;   
+    margin-top: 20px;
 }
 
 #navbar.active {
@@ -43,10 +44,58 @@ nav img{
     opacity: 0;
     pointer-events: none;
 }
+
+
 #navbar a{
+    display: block;
+    margin-bottom: 15px;
     color:$textColor ;
+    border-bottom: 1px solid transparent;
+    padding: 3px 6px 3px 6px;
 }
 #navbar a:hover{
-   background-color: $buttonHoverColor;
-   color: $textHoverColor;
+   border-bottom: 1px solid $buttonHoverColor;
+   transition: 0.3s ease-in-out;
 }
+
+
+
+@media screen and (min-width: 1024px) {
+    nav {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+        overflow: hidden;
+        display: flex;   
+        justify-content: space-between; /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
+        align-items: center;
+    }
+    nav .hamburger-icon {
+        display: none;
+    }
+
+    nav img {
+        width: 70%;
+    }
+    
+
+    #navbar {
+        display: flex;
+        margin-top: 0;
+        flex-direction: row;         
+    }
+
+    #navbar a {
+        margin-top: 20px;
+        margin-bottom: 0;
+        margin-right: 15px; 
+    }
+
+    #navbar #CTA{
+        border: 1px solid $buttonBorderColor;
+        border-radius: 5px;
+    }
+    
+}
+
+
