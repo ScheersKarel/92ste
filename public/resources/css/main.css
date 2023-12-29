@@ -4,7 +4,6 @@ li {
 }
 
 a {
-  color: #053F41;
   text-decoration: none;
 }
 
@@ -12,6 +11,7 @@ nav {
   width: 90%;
   margin: auto;
   padding: 10px;
+  overflow: hidden;
 }
 
 nav .header {
@@ -25,7 +25,7 @@ nav .hamburger-icon {
 }
 
 nav img {
-  max-width: 100%;
+  width: 80%;
 }
 
 #navbar {
@@ -62,4 +62,106 @@ nav img {
 #navbar a li:hover {
   background-color: #053F41;
   color: white;
+}
+
+.newscards {
+  width: 90%;
+  margin: auto;
+}
+.newscards__card {
+  margin-top: 20px;
+}
+.newscards__card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newscards__card__header__title {
+  font-size: 130%;
+}
+.newscards__card__header__dateButton {
+  background: transparent;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  border: 1px solid #053F41;
+}
+.newscards__card__text {
+  margin-top: -5px;
+}
+.newscards__card__takButton {
+  background: #F39A18;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #F39A18;
+  color: white;
+  width: 25%;
+}
+.newscards__card__evenementButton {
+  background: #FF6523;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #FF6523;
+  color: white;
+  width: 30%;
+  margin-left: 2%;
+}
+
+.footer {
+  background-color: #053F41;
+  margin-top: 30px;
+  padding-top: 15px;
+  display: flex;
+}
+.footer__img {
+  margin-left: 5%;
+  height: fit-content;
+  margin-top: 30px;
+}
+.footer__text {
+  margin-bottom: 20px;
+  color: white;
+  margin-left: 5%;
+}
+.footer__text__span {
+  color: gray;
+}
+.footer__text__link {
+  color: white;
+}
+
+.privacy {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.privacy a {
+  color: gray;
+  font-size: 80%;
+}
+
+.content {
+  width: 100%;
+}
+.content__img {
+  width: 100%;
+  margin-top: -20px;
+}
+.content__title {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  font-size: 170%;
+}
+
+body {
+  width: 100%;
+  padding-left: 0px;
+  margin-left: 0px;
 }

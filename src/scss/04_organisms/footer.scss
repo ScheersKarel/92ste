@@ -1,0 +1,41 @@
+.footer{
+    background-color: $bgFooter ;
+    margin-top: 30px;
+    padding-top:15px ;
+    display: flex;
+   
+
+    &__img{
+        margin-left: 5%;
+        height: fit-content;
+        margin-top: 30px;
+    }
+    &__text{
+        margin-bottom: 20px;
+        color:white;
+        margin-left: 5%;
+
+        &__span{
+            color: gray;
+            
+        }
+        &__link{
+            color: white;
+           
+        }       
+    }
+}
+
+.privacy{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    a{
+        color: gray;
+        font-size: 80%;
+    }
+}

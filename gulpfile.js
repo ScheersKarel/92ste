@@ -41,7 +41,8 @@ function buildStyles() {
     });
     gulp.watch('./src/scss/**/*.scss', buildStyles);
     gulp.watch('./src/images/*', images);
-    gulp.watch('./src/js/*', compress)
+    gulp.watch('./src/js/*', compress);
+    gulp.watch('./public/*.php').on('change', browserSync.reload);   
     gulp.watch('./public/*.html').on('change', browserSync.reload);
     buildStyles();
     images();

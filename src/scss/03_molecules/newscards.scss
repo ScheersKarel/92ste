@@ -1,0 +1,53 @@
+.newscards{
+    width: 90%;
+    margin: auto;
+    
+
+    &__card {
+        margin-top: 20px;
+
+        &__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+            &__title{
+                font-size: $fontsizeH2Mobile;
+            }
+
+            &__dateButton{
+               background: transparent;
+               border-radius: 20px;
+               padding: 5px 10px 5px 10px;
+               display: flex;
+               justify-content: space-between;
+               width: 20%;
+               border: 1px solid #053F41;
+            }
+        }
+
+        &__text{
+            margin-top: -5px;
+        }
+        
+        &__takButton{
+            background: $buttonTakColor;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            border: 1px solid $buttonTakColor;
+            color: $buttonTextColor ;
+            width: 25%;
+        }
+
+        &__evenementButton{
+            background: $buttonEvenementColor;
+            border-radius: 20px;
+            padding: 5px 10px 5px 10px;
+            border: 1px solid $buttonEvenementColor;
+            color: $buttonTextColor ;
+            width: 30%;
+            margin-left: 2%;
+        }
+        
+    }
+}
