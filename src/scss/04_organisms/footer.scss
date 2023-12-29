@@ -3,27 +3,41 @@
     margin-top: 30px;
     padding-top:15px ;
     display: flex;
-   
 
-    &__img{
+    &__mobile{
+        display: flex;
         margin-left: 5%;
-        height: fit-content;
-        margin-top: 30px;
-    }
-    &__text{
-        margin-bottom: 20px;
-        color:white;
-        margin-left: 5%;
-
-        &__span{
-            color: gray;
-            
+        width: 80%;
+        margin: auto;
+        
+        &__img{
+            height: fit-content;
+            margin-top: 30px;
         }
-        &__link{
-            color: white;
-           
-        }       
+        &__text{
+            margin-bottom: 20px;
+            color:white;
+            margin-left: 5%;
+
+            &__span{
+                color: gray;
+                
+            }
+            &__link{
+                color: white;
+            
+            }       
+        }
     }
+
+    &__desc{
+        display: none;
+    }
+
+  
+}
+.footer a{
+    color: white;
 }
 
 .privacy{
@@ -37,5 +51,41 @@
     a{
         color: gray;
         font-size: 80%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+   .footer{
+    &__mobile{
+        margin-left: 10%;
+    }
+    &__desc{
+        width: 50%;
+        margin-top: 20px;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: gray;
+
+        &__takken{
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 20px;
+
+            &__title{
+            grid-column: span 2;
+            margin-bottom: -40px;
+            }
+        }
+
+        }
+        
+       
+    }
+
+    .privacy{
+        justify-content: space-around;
     }
 }

@@ -213,20 +213,32 @@ nav img {
   padding-top: 15px;
   display: flex;
 }
-.footer__img {
+.footer__mobile {
+  display: flex;
   margin-left: 5%;
+  width: 80%;
+  margin: auto;
+}
+.footer__mobile__img {
   height: fit-content;
   margin-top: 30px;
 }
-.footer__text {
+.footer__mobile__text {
   margin-bottom: 20px;
   color: white;
   margin-left: 5%;
 }
-.footer__text__span {
+.footer__mobile__text__span {
   color: gray;
 }
-.footer__text__link {
+.footer__mobile__text__link {
+  color: white;
+}
+.footer__desc {
+  display: none;
+}
+
+.footer a {
   color: white;
 }
 
@@ -243,6 +255,32 @@ nav img {
   font-size: 80%;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer__mobile {
+    margin-left: 10%;
+  }
+  .footer__desc {
+    width: 50%;
+    margin-top: 20px;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: gray;
+  }
+  .footer__desc__takken {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  .footer__desc__takken__title {
+    grid-column: span 2;
+    margin-bottom: -40px;
+  }
+  .privacy {
+    justify-content: space-around;
+  }
+}
 .content {
   width: 100%;
   margin-top: 30px;
