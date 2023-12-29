@@ -6,7 +6,7 @@
 
         &__header{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
            
             &__title{
@@ -14,13 +14,32 @@
             }
 
             &__dateButton{
+                margin-left: 20px;
                background: transparent;
                border-radius: 20px;
                padding: 5px 10px 5px 10px;
                display: flex;
                justify-content: space-between;
-               width: 20%;
                border: 1px solid #053F41;
+            }
+
+            &__takButtonDesc{
+                background: $buttonTakColor;
+                border-radius: 20px;
+                padding: 5px 20px 5px 20px;
+                border: 1px solid $buttonTakColor;
+                color: $buttonTextColor ;
+                margin-left: 2%;
+                display: none;
+            }
+            &__evenementButtonDesc{
+                background: $buttonEvenementColor;
+                border-radius: 20px;
+                padding: 5px 20px 5px 20px;
+                border: 1px solid $buttonEvenementColor;
+                color: $buttonTextColor ;
+                display: none;
+                margin-left: 2%;
             }
         }
 
@@ -31,21 +50,47 @@
         &__takButton{
             background: $buttonTakColor;
             border-radius: 20px;
-            padding: 5px 10px 5px 10px;
+            padding: 5px 20px 5px 20px;
             border: 1px solid $buttonTakColor;
             color: $buttonTextColor ;
-            width: 25%;
         }
 
         &__evenementButton{
             background: $buttonEvenementColor;
             border-radius: 20px;
-            padding: 5px 10px 5px 10px;
+            padding: 5px 20px 5px 20px;
             border: 1px solid $buttonEvenementColor;
             color: $buttonTextColor ;
-            width: 30%;
+            
             margin-left: 2%;
         }
         
     }
+}
+
+@media screen and (min-width: 1024px) {
+    .newscards{  
+     
+         &__card {
+            margin-top: 50px;
+            &__header{
+                &__takButtonDesc{
+                    display: block;
+                }
+                &__evenementButtonDesc{
+                    display: block;
+                }
+            }      
+           
+             &__takButton{
+                 display: none;
+             }
+     
+             &__evenementButton{
+                 display: none;
+             }
+             
+         }
+     }
+     
 }
