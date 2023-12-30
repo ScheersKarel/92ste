@@ -1,7 +1,8 @@
 <?php
-include('./components/header.html');
-include('./components/nav.html');
-?>
+include('./components/header.html');?>
+<div class="container">
+<?php include('./components/nav.html');?>
+
 
 <div class="content">
         <img src="./resources/images/imgHome.png" alt="" class="content__img">
@@ -86,3 +87,8 @@ include('./components/nav.html');
 <?php 
 include('./components/footer.html');
 ?>
+</div>
+</body>
+</html>
+<script src="./resources/js/index.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>

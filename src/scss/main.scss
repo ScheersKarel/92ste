@@ -4,6 +4,8 @@
 @import "01_fundaments/fonts.scss";
 @import "01_fundaments/links.scss";
 
+@import "02_atoms/steentje.scss";
+
 @import "03_molecules/nav.scss";
 @import "03_molecules/newscards.scss";
 @import "03_molecules/homeInfo.scss";
@@ -12,6 +14,7 @@
 @import "03_molecules/takNieuws.scss";
 
 @import "04_organisms/footer.scss";
+@import "04_organisms/steentjeNav.scss";
 
 @import "05_layouts/homeContainer.scss";
 
