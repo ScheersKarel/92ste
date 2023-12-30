@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300;400;500&display=swap");
+.inschrijvingenList {
+  list-style: disc;
+  color: black;
+  margin-bottom: 10px;
+}
+
 li {
   list-style: none;
   color: #053F41;
+  font-size: 110%;
 }
 
 h1, h2, h3 {
@@ -432,6 +439,10 @@ body {
   width: 100%;
   padding-left: 0px;
   margin-left: 0px;
+}
+
+p {
+  font-size: 110%;
 }
 
 .container {
