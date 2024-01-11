@@ -1,0 +1,25 @@
+.takkenContent {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+
+
+    &__card {
+        margin-top: 50px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        &__img {
+            width: 60%;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .takkenContent {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
