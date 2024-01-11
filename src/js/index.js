@@ -1,38 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const hamburgerIcon = document.querySelector('.hamburger-icon');
-    const navbar = document.getElementById('navbar');
-
-    // Functie om de huidige pagina te markeren
-    function markCurrentPage() {
-        const currentPage = window.location.pathname.split("/").pop();
-        const links = document.querySelectorAll("#navbar a");
-
-        for (let i = 0; i < links.length; i++) {
-            const link = links[i];
-            const linkPage = link.href.split("/").pop();
-
-            if (currentPage === linkPage) {
-
-                if (currentPage === "contact" || currentPage === "voetreflexologie" || currentPage === "vertebraal-correctie" || currentPage === "psychozone-harmonisering") {
-                    link.style.textDecoration = 'underline';
-                }
-
-                else {
-                    link.style.textDecoration = 'underline';
-                    link.style.color = '#10587B';
-                }
-            }
-            // Check if the current page is the home page
-            else if (currentPage === "" && linkPage === "voetGevoel") {
-                link.style.textDecoration = 'underline';
-                link.style.color = '#10587B';
-            }
-        }
-    }
+    const navbar = document.getElementById('navbarMobile');
 
     if (window.innerWidth > 1024) {
         navbar.classList.add('active');
-        markCurrentPage(); // Markeer de huidige pagina als de site wordt geladen
     }
 
     hamburgerIcon.addEventListener('click', function () {
@@ -42,9 +13,26 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('resize', function () {
         if (window.innerWidth > 1024) {
             navbar.classList.add('active');
-            markCurrentPage(); // Markeer de huidige pagina bij het wijzigen van de schermgrootte
         } else {
             navbar.classList.remove('active');
+        }
+    });
+
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownButton = document.getElementById('dropdownButton');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    let dropdownVisible = false;
+
+    dropdownButton.addEventListener('click', function () {
+        dropdownVisible = !dropdownVisible;
+
+        if (dropdownVisible) {
+            dropdownContent.style.display = 'block';
+        } else {
+            dropdownContent.style.display = 'none';
         }
     });
 });
