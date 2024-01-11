@@ -1,20 +1,22 @@
-nav{
+nav {
     width: 90%;
     margin: auto;
     padding: 10px;
     overflow: hidden;
 }
-nav .header{
-    display: flex;   
-    justify-content: space-between; /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
+
+nav .header {
+    display: flex;
+    justify-content: space-between;
+    /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
     align-items: center;
 }
 
-nav .hamburger-icon{
+nav .hamburger-icon {
     margin-top: 15px;
 }
 
-nav img{
+nav img {
     width: 80%;
 }
 
@@ -27,7 +29,7 @@ nav img{
     overflow: hidden;
     pointer-events: none;
     text-align: center;
-    font-size: 120%;   
+    font-size: 120%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -35,28 +37,31 @@ nav img{
 #navbar.active {
     transform: translateY(0);
     opacity: 1;
-    max-height: 500px; /* of de hoogte die je wilt hebben */
+    max-height: 500px;
+    /* of de hoogte die je wilt hebben */
     pointer-events: auto;
 }
 
 #navbar:not(.active) {
-    transition: transform 5s ease-in-out, opacity 5s ease-in-out, max-height 1s ease-in-out; /* Aangepaste overgangsduratie voor deactiveren */
+    transition: transform 5s ease-in-out, opacity 5s ease-in-out, max-height 1s ease-in-out;
+    /* Aangepaste overgangsduratie voor deactiveren */
     max-height: 0;
     opacity: 0;
     pointer-events: none;
 }
 
 
-#navbar a{
+#navbar a {
     display: block;
     margin-bottom: 15px;
-    color:$linkColor ;
+    color: $linkColor ;
     border-bottom: 1px solid transparent;
     padding: 3px 6px 3px 6px;
 }
-#navbar a:hover{
-   border-bottom: 1px solid $buttonHoverColor;
-   transition: 0.3s ease-in-out;
+
+#navbar a:hover {
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -67,10 +72,12 @@ nav img{
         margin: auto;
         padding: 10px;
         overflow: hidden;
-        display: flex;   
-        justify-content: space-between; /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
+        display: flex;
+        justify-content: space-between;
+        /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
         align-items: center;
     }
+
     nav .hamburger-icon {
         display: none;
     }
@@ -78,26 +85,24 @@ nav img{
     nav img {
         width: 70%;
     }
-    
+
 
     #navbar {
         display: flex;
         margin-top: 0px;
-        flex-direction: row;         
+        flex-direction: row;
     }
 
     #navbar a {
         margin-top: 20px;
         margin-bottom: 0;
-        margin-right: 15px; 
+        margin-right: 15px;
     }
 
-    #navbar #CTA{
+    #navbar #CTA {
         border: 1px solid $buttonBorderColor;
         border-radius: 5px;
         padding: 3px 10px 3px 10px;
     }
-    
+
 }
-
-

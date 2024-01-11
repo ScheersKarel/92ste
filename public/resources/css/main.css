@@ -26,8 +26,10 @@ a {
 }
 
 .steentje {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  margin: auto;
+  width: 80%;
 }
 
 nav {
@@ -39,7 +41,8 @@ nav {
 
 nav .header {
   display: flex;
-  justify-content: space-between; /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
+  justify-content: space-between;
+  /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
   align-items: center;
 }
 
@@ -67,12 +70,14 @@ nav img {
 #navbar.active {
   transform: translateY(0);
   opacity: 1;
-  max-height: 500px; /* of de hoogte die je wilt hebben */
+  max-height: 500px;
+  /* of de hoogte die je wilt hebben */
   pointer-events: auto;
 }
 
 #navbar:not(.active) {
-  transition: transform 5s ease-in-out, opacity 5s ease-in-out, max-height 1s ease-in-out; /* Aangepaste overgangsduratie voor deactiveren */
+  transition: transform 5s ease-in-out, opacity 5s ease-in-out, max-height 1s ease-in-out;
+  /* Aangepaste overgangsduratie voor deactiveren */
   max-height: 0;
   opacity: 0;
   pointer-events: none;
@@ -87,7 +92,7 @@ nav img {
 }
 
 #navbar a:hover {
-  border-bottom: 1px solid #053F41;
+  text-decoration: underline;
   transition: 0.3s ease-in-out;
 }
 
@@ -98,7 +103,8 @@ nav img {
     padding: 10px;
     overflow: hidden;
     display: flex;
-    justify-content: space-between; /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
+    justify-content: space-between;
+    /* Om de elementen te verdelen, de afbeelding zal naar rechts worden geduwd */
     align-items: center;
   }
   nav .hamburger-icon {
