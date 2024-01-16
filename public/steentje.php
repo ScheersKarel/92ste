@@ -32,8 +32,8 @@ include('./components/header.html'); ?>
     include('./components/footer.html');
     ?>
 </div>
+<script src="./resources/js/index.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
-<script src="./resources/js/index.js"></script>
-<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
